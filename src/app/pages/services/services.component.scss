@@ -1,0 +1,818 @@
+// Variables
+$primary: #0D3B66;
+$accent: #F4D35E;
+$dark: #0a0a0f;
+$light: #f8fafc;
+$gray: #64748b;
+
+// ===================== SERVICES HERO - CENTERED MINIMAL (Different from Home) =====================
+.services-hero {
+  position: relative;
+  padding: 160px 0 120px;
+  background: $primary;
+  text-align: center;
+  overflow: hidden;
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba($accent, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba($accent, 0.08) 0%, transparent 50%),
+      linear-gradient(135deg, $primary 0%, darken($primary, 5%) 100%);
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-center {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(white, 0.08);
+    border-radius: 50px;
+    margin-bottom: 32px;
+    font-size: 14px;
+
+    a {
+      color: rgba(white, 0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover { color: white; }
+    }
+
+    svg {
+      color: rgba(white, 0.4);
+    }
+
+    span:last-child {
+      color: $accent;
+      font-weight: 600;
+    }
+  }
+
+  h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+  }
+
+  > .container > .hero-center > p {
+    font-size: 20px;
+    color: rgba(white, 0.8);
+    line-height: 1.7;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    .hero-icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+
+      .icon-circle {
+        width: 90px;
+        height: 90px;
+        background: rgba(white, 0.1);
+        border: 2px solid rgba(white, 0.15);
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+        backdrop-filter: blur(10px);
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgba(white, 0.9);
+      }
+
+      &:hover .icon-circle {
+        background: rgba($accent, 0.2);
+        border-color: $accent;
+        transform: translateY(-8px);
+      }
+    }
+  }
+
+  .hero-cta {
+    .btn-cta {
+      display: inline-block;
+      padding: 20px 48px;
+      background: $accent;
+      color: $primary;
+      font-weight: 700;
+      font-size: 18px;
+      border-radius: 60px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 30px rgba($accent, 0.4);
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 40px rgba($accent, 0.5);
+      }
+    }
+  }
+
+  .hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// ===================== SERVICES LIST =====================
+.services-list {
+  padding: 80px 0 100px;
+  background: $light;
+
+  .service-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 100px;
+
+    &:last-child { margin-bottom: 0; }
+
+    &.reverse {
+      direction: rtl;
+
+      > * { direction: ltr; }
+    }
+  }
+
+  .service-image {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba($primary, 0.15);
+
+    img {
+      width: 100%;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    .image-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 12px 24px;
+      background: $accent;
+      border-radius: 12px;
+
+      .badge-price {
+        font-size: 16px;
+        font-weight: 800;
+        color: $primary;
+      }
+    }
+  }
+
+  .service-content {
+    position: relative;
+
+    .service-number {
+      font-size: 120px;
+      font-weight: 900;
+      color: rgba($primary, 0.05);
+      position: absolute;
+      top: -60px;
+      right: 0;
+      line-height: 1;
+    }
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 24px;
+
+      img { width: 100%; height: 100%; }
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 800;
+      color: $primary;
+      margin-bottom: 16px;
+    }
+
+    .service-desc {
+      font-size: 17px;
+      color: $gray;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        color: #475569;
+
+        svg {
+          color: $accent;
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    .service-btn {
+      display: inline-block;
+      padding: 16px 32px;
+      background: $primary;
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba($primary, 0.2);
+      }
+    }
+  }
+}
+
+// ===================== PROCESS SECTION =====================
+.process-section {
+  padding: 100px 0;
+  background: white;
+
+  .process-header {
+    text-align: center;
+    margin-bottom: 70px;
+
+    .process-tag {
+      display: inline-block;
+      padding: 10px 24px;
+      background: rgba($accent, 0.15);
+      color: $primary;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      color: $primary;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 18px;
+      color: $gray;
+    }
+  }
+
+  .process-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  .timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .marker-num {
+      width: 50px;
+      height: 50px;
+      background: $accent;
+      color: $primary;
+      font-size: 20px;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .marker-line {
+      width: 2px;
+      flex: 1;
+      background: linear-gradient(to bottom, $accent, transparent);
+      margin-top: 15px;
+    }
+  }
+
+  .timeline-content {
+    flex: 1;
+    padding-bottom: 30px;
+
+    .timeline-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 16px;
+
+      img { width: 100%; height: 100%; }
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $gray;
+      line-height: 1.7;
+    }
+  }
+}
+
+
+// ===================== PRICING SECTION =====================
+.pricing-section {
+  padding: 100px 0;
+  background: $light;
+
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    .pricing-tag {
+      display: inline-block;
+      padding: 10px 24px;
+      background: rgba($accent, 0.15);
+      color: $primary;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      color: $primary;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 18px;
+      color: $gray;
+    }
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .pricing-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 60px rgba($primary, 0.1);
+    }
+
+    &.popular {
+      background: $primary;
+      transform: scale(1.05);
+      box-shadow: 0 30px 60px rgba($primary, 0.3);
+
+      .popular-badge {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px 20px;
+        background: $accent;
+        color: $primary;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 20px;
+      }
+
+      .pricing-top {
+        h3, p { color: white; }
+        .pricing-amount { color: $accent; }
+      }
+
+      .pricing-features li {
+        color: rgba(white, 0.9);
+        svg { color: $accent; }
+      }
+
+      &:hover {
+        transform: scale(1.05) translateY(-10px);
+      }
+    }
+
+    .pricing-top {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba($primary, 0.1);
+
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 14px;
+        color: $gray;
+        margin-bottom: 20px;
+      }
+
+      .pricing-amount {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 4px;
+        color: $primary;
+
+        .currency { font-size: 24px; font-weight: 600; }
+        .price { font-size: 56px; font-weight: 800; line-height: 1; }
+        .period { font-size: 16px; color: $gray; }
+      }
+    }
+
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0;
+        font-size: 15px;
+        color: #475569;
+        border-bottom: 1px solid rgba($primary, 0.05);
+
+        &:last-child { border-bottom: none; }
+        svg { color: $accent; flex-shrink: 0; }
+      }
+    }
+
+    .pricing-btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: transparent;
+      color: $primary;
+      font-weight: 700;
+      font-size: 15px;
+      border: 2px solid $primary;
+      border-radius: 12px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $primary;
+        color: white;
+      }
+
+      &.primary {
+        background: $accent;
+        color: $primary;
+        border-color: $accent;
+
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+// ===================== TECH SECTION =====================
+.tech-section {
+  padding: 80px 0;
+  background: white;
+
+  .tech-header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: $primary;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $gray;
+    }
+  }
+
+  .tech-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 32px;
+    background: $light;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba($primary, 0.08);
+      border-color: $accent;
+    }
+
+    img { width: 48px; height: 48px; }
+    span { font-size: 14px; font-weight: 600; color: $primary; }
+  }
+}
+
+// ===================== FAQ SECTION =====================
+.faq-section {
+  padding: 100px 0;
+  background: $light;
+
+  .faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    .faq-tag {
+      display: inline-block;
+      padding: 10px 24px;
+      background: rgba($accent, 0.15);
+      color: $primary;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      color: $primary;
+    }
+  }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 20px 40px rgba($primary, 0.08);
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 15px;
+      color: $gray;
+      line-height: 1.7;
+    }
+  }
+}
+
+// ===================== CTA BANNER =====================
+.cta-banner {
+  padding: 100px 0;
+  background: $primary;
+
+  .banner-content {
+    text-align: center;
+
+    h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 800;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 18px;
+      color: rgba(white, 0.8);
+      margin-bottom: 32px;
+    }
+
+    .banner-btn {
+      display: inline-block;
+      padding: 18px 40px;
+      background: $accent;
+      color: $primary;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba($accent, 0.4);
+      }
+    }
+  }
+}
+
+// ===================== RESPONSIVE =====================
+@media (max-width: 1024px) {
+  .services-hero {
+    padding: 140px 0 100px;
+
+    .hero-icons {
+      gap: 24px;
+
+      .hero-icon-item .icon-circle {
+        width: 70px;
+        height: 70px;
+
+        img { width: 40px; height: 40px; }
+      }
+    }
+  }
+
+  .services-list .service-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    &.reverse { direction: ltr; }
+    .service-content .service-number { display: none; }
+  }
+
+  .pricing-section .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+
+    .pricing-card.popular {
+      transform: none;
+      order: -1;
+
+      &:hover { transform: translateY(-10px); }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 120px 0 80px;
+
+    h1 { font-size: 36px; }
+
+    .hero-icons {
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .hero-icon-item .icon-circle {
+        width: 60px;
+        height: 60px;
+
+        img { width: 32px; height: 32px; }
+      }
+    }
+  }
+
+  .services-list .service-content {
+    h2 { font-size: 28px; }
+    .service-features { grid-template-columns: 1fr; }
+  }
+
+  .process-section .timeline-item { gap: 24px; }
+  .faq-section .faq-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .services-hero {
+    .hero-icons {
+      .hero-icon-item {
+        .icon-circle {
+          width: 56px;
+          height: 56px;
+          border-radius: 16px;
+
+          img { width: 28px; height: 28px; }
+        }
+
+        span { font-size: 12px; }
+      }
+    }
+
+    .hero-cta .btn-cta {
+      padding: 16px 36px;
+      font-size: 16px;
+    }
+  }
+
+  .services-list {
+    padding: 60px 0;
+    .service-row { margin-bottom: 60px; }
+  }
+
+  .tech-section .tech-grid {
+    gap: 15px;
+
+    .tech-item {
+      padding: 16px 20px;
+      img { width: 36px; height: 36px; }
+      span { font-size: 12px; }
+    }
+  }
+}

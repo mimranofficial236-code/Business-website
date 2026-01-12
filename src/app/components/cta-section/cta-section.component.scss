@@ -1,0 +1,118 @@
+.cta-section {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+
+  .cta-bg {
+    position: absolute;
+    inset: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(#0D3B66, 0.95) 0%, rgba(#0D3B66, 0.88) 100%);
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .cta-icon {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    > p {
+      font-size: 17px;
+      color: rgba(white, 0.85);
+      margin-bottom: 32px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 16px 28px;
+      background: #F4D35E;
+      color: #0D3B66;
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(#F4D35E, 0.4);
+      }
+    }
+
+    .btn-outline {
+      display: inline-block;
+      padding: 16px 28px;
+      background: transparent;
+      color: white;
+      font-weight: 600;
+      font-size: 15px;
+      border: 2px solid rgba(white, 0.3);
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(white, 0.1);
+        border-color: rgba(white, 0.5);
+      }
+    }
+
+    .cta-features {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+
+      span {
+        font-size: 14px;
+        color: rgba(white, 0.7);
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .cta-section .cta-content {
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cta-features {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
