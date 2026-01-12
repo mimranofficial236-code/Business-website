@@ -76,7 +76,7 @@ import { FormsModule } from '@angular/forms';
             </div>
             <div class="info-card highlight">
               <div class="highlight-icon">
-                <img src="https://img.icons8.com/fluency/48/rocket.png" alt="Quick Response" />
+                <img src="https://img.icons8.com/fluency/96/rocket.png" alt="Quick Response" />
               </div>
               <div class="highlight-content">
                 <h3>Quick Response Guaranteed</h3>

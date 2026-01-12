@@ -219,7 +219,7 @@ import { RouterLink } from '@angular/router';
 export class ServicesComponent {
   services = [
     {
-      icon: 'https://img.icons8.com/fluency/48/web-design.png',
+      icon: 'https://img.icons8.com/fluency/96/web-design.png',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=90',
       title: 'Website Design & Development',
       desc: 'Custom, mobile-responsive websites built to convert visitors into customers. We create stunning designs that reflect your brand and drive results.',
@@ -227,7 +227,7 @@ export class ServicesComponent {
       price: 'From £499'
     },
     {
-      icon: 'https://img.icons8.com/fluency/48/google-logo.png',
+      icon: 'https://img.icons8.com/fluency/96/google-logo.png',
       image: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=800&h=600&fit=crop&q=90',
       title: 'Google Business Setup',
       desc: 'Get found on Google Maps and Search. We optimize your Google Business Profile to attract local customers and increase visibility.',
@@ -235,7 +235,7 @@ export class ServicesComponent {
       price: 'From £199'
     },
     {
-      icon: 'https://img.icons8.com/fluency/48/combo-chart.png',
+      icon: 'https://img.icons8.com/fluency/96/combo-chart.png',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=90',
       title: 'SEO & Digital Marketing',
       desc: 'Rank higher in search results and reach more customers. Our proven strategies help you dominate your market online.',
@@ -243,7 +243,7 @@ export class ServicesComponent {
       price: 'From £299/mo'
     },
     {
-      icon: 'https://img.icons8.com/fluency/48/shopping-cart-loaded.png',
+      icon: 'https://img.icons8.com/fluency/96/shopping-cart-loaded.png',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&q=90',
       title: 'E-Commerce Solutions',
       desc: 'Online stores that sell 24/7. We build powerful e-commerce platforms with secure payments and easy management.',
@@ -253,10 +253,10 @@ export class ServicesComponent {
   ];
 
   process = [
-    { icon: 'https://img.icons8.com/fluency/48/phone-message.png', title: 'Discovery Call', desc: 'We learn about your business, goals, and requirements in a free consultation.' },
-    { icon: 'https://img.icons8.com/fluency/48/design.png', title: 'Strategy & Design', desc: 'We create a custom strategy and design mockups for your approval.' },
-    { icon: 'https://img.icons8.com/fluency/48/source-code.png', title: 'Development', desc: 'Our team builds your solution with regular updates and feedback.' },
-    { icon: 'https://img.icons8.com/fluency/48/rocket.png', title: 'Launch & Support', desc: 'We launch your project and provide ongoing support and maintenance.' }
+    { icon: 'https://img.icons8.com/fluency/96/phone-message.png', title: 'Discovery Call', desc: 'We learn about your business, goals, and requirements in a free consultation.' },
+    { icon: 'https://img.icons8.com/fluency/96/design.png', title: 'Strategy & Design', desc: 'We create a custom strategy and design mockups for your approval.' },
+    { icon: 'https://img.icons8.com/fluency/96/source-code.png', title: 'Development', desc: 'Our team builds your solution with regular updates and feedback.' },
+    { icon: 'https://img.icons8.com/fluency/96/rocket.png', title: 'Launch & Support', desc: 'We launch your project and provide ongoing support and maintenance.' }
   ];
 
   pricing = [
