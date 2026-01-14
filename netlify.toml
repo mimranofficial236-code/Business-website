@@ -2,7 +2,21 @@
   command = "ng build --configuration production"
   publish = "dist/brightbiz-digital/browser"
 
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Cloudflare Cache Purge Plugin (Optional)
+# Uncomment below and add your credentials in Netlify Environment Variables
+# [[plugins]]
+#   package = "netlify-plugin-cloudflare-cache-purge"
+#   [plugins.inputs]
+#     # Set these in Netlify Dashboard > Site Settings > Environment Variables:
+#     # CLOUDFLARE_ZONE_ID = "your-zone-id"
+#     # CLOUDFLARE_API_TOKEN = "your-api-token"
+#     purgeAll = true
