@@ -93,11 +93,22 @@
     .cta-features {
       display: flex;
       justify-content: center;
-      gap: 28px;
+      gap: 24px;
 
       span {
         font-size: 14px;
-        color: rgba(white, 0.7);
+        font-weight: 600;
+        color: rgba(white, 0.9);
+        padding: 10px 20px;
+        background: rgba(white, 0.1);
+        border-radius: 50px;
+        border: 1px solid rgba(white, 0.2);
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(white, 0.15);
+          transform: translateY(-2px);
+        }
       }
     }
   }

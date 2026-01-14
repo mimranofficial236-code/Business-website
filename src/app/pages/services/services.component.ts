@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -93,7 +93,7 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- PROCESS - Timeline Style -->
+    <!-- PROCESS - Timeline Style with Scroll Animation -->
     <section class="process-section">
       <div class="container">
         <div class="process-header">
@@ -104,7 +104,7 @@ import { RouterLink } from '@angular/router';
         
         <div class="process-timeline">
           @for (step of process; track step.title; let i = $index; let last = $last) {
-            <div class="timeline-item">
+            <div class="timeline-item" #timelineItem [class.visible]="visibleItems[i]">
               <div class="timeline-marker">
                 <span class="marker-num">{{ i + 1 }}</span>
                 @if (!last) {
@@ -167,15 +167,39 @@ import { RouterLink } from '@angular/router';
       </div>
     </section>
 
-    <!-- TECH STACK -->
+    <!-- TECH STACK - Marquee Slider -->
     <section class="tech-section">
       <div class="container">
         <div class="tech-header">
           <h2>Technologies We Use</h2>
           <p>Modern tools for modern solutions</p>
         </div>
-        <div class="tech-grid">
+      </div>
+      <div class="tech-marquee">
+        <div class="marquee-track">
           @for (tech of technologies; track tech.name) {
+            <div class="tech-item">
+              <img [src]="tech.icon" [alt]="tech.name" />
+              <span>{{ tech.name }}</span>
+            </div>
+          }
+          @for (tech of technologies; track tech.name + '-dup') {
+            <div class="tech-item">
+              <img [src]="tech.icon" [alt]="tech.name" />
+              <span>{{ tech.name }}</span>
+            </div>
+          }
+        </div>
+      </div>
+      <div class="tech-marquee reverse">
+        <div class="marquee-track">
+          @for (tech of technologies; track tech.name + '-rev') {
+            <div class="tech-item">
+              <img [src]="tech.icon" [alt]="tech.name" />
+              <span>{{ tech.name }}</span>
+            </div>
+          }
+          @for (tech of technologies; track tech.name + '-rev-dup') {
             <div class="tech-item">
               <img [src]="tech.icon" [alt]="tech.name" />
               <span>{{ tech.name }}</span>
@@ -216,7 +240,47 @@ import { RouterLink } from '@angular/router';
   `,
   styleUrls: ['./services.component.scss']
 })
-export class ServicesComponent {
+export class ServicesComponent implements AfterViewInit {
+  @ViewChildren('timelineItem') timelineItems!: QueryList<ElementRef>;
+  
+  visibleItems: boolean[] = [false, false, false, false];
+  private observer!: IntersectionObserver;
+
+  ngAfterViewInit() {
+    this.setupIntersectionObserver();
+  }
+
+  private setupIntersectionObserver() {
+    this.observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = this.timelineItems.toArray().findIndex(
+              (item) => item.nativeElement === entry.target
+            );
+            if (index !== -1 && !this.visibleItems[index]) {
+              // Add delay based on index for staggered effect
+              setTimeout(() => {
+                this.visibleItems[index] = true;
+              }, index * 300);
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    // Observe each timeline item
+    setTimeout(() => {
+      this.timelineItems.forEach((item) => {
+        this.observer.observe(item.nativeElement);
+      });
+    }, 100);
+  }
+
   services = [
     {
       icon: 'https://img.icons8.com/fluency/96/web-design.png',
@@ -286,12 +350,24 @@ export class ServicesComponent {
   technologies = [
     { name: 'Angular', icon: 'https://img.icons8.com/color/96/angularjs.png' },
     { name: 'React', icon: 'https://img.icons8.com/color/96/react-native.png' },
+    { name: 'Vue.js', icon: 'https://img.icons8.com/color/96/vue-js.png' },
     { name: 'Node.js', icon: 'https://img.icons8.com/color/96/nodejs.png' },
+    { name: 'TypeScript', icon: 'https://img.icons8.com/color/96/typescript.png' },
+    { name: 'JavaScript', icon: 'https://img.icons8.com/color/96/javascript.png' },
     { name: 'WordPress', icon: 'https://img.icons8.com/color/96/wordpress.png' },
     { name: 'Shopify', icon: 'https://img.icons8.com/color/96/shopify.png' },
-    { name: 'AWS', icon: 'https://img.icons8.com/color/96/amazon-web-services.png' },
+    { name: 'Laravel', icon: 'https://img.icons8.com/fluency/96/laravel.png' },
+    { name: 'PHP', icon: 'https://img.icons8.com/officel/96/php-logo.png' },
     { name: 'Python', icon: 'https://img.icons8.com/color/96/python.png' },
-    { name: 'Figma', icon: 'https://img.icons8.com/color/96/figma.png' }
+    { name: 'MongoDB', icon: 'https://img.icons8.com/color/96/mongodb.png' },
+    { name: 'MySQL', icon: 'https://img.icons8.com/color/96/mysql-logo.png' },
+    { name: 'PostgreSQL', icon: 'https://img.icons8.com/color/96/postgreesql.png' },
+    { name: 'AWS', icon: 'https://img.icons8.com/color/96/amazon-web-services.png' },
+    { name: 'Firebase', icon: 'https://img.icons8.com/color/96/firebase.png' },
+    { name: 'Docker', icon: 'https://img.icons8.com/color/96/docker.png' },
+    { name: 'Git', icon: 'https://img.icons8.com/color/96/git.png' },
+    { name: 'Figma', icon: 'https://img.icons8.com/color/96/figma.png' },
+    { name: 'Tailwind', icon: 'https://img.icons8.com/color/96/tailwindcss.png' }
   ];
 
   faqs = [
