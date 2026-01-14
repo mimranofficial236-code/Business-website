@@ -1,5 +1,6 @@
-// Variables
+﻿// Variables
 $primary: #0D3B66;
+$primary-dark: #092a4a;
 $accent: #F4D35E;
 $light: #f8fafc;
 $gray: #64748b;
@@ -42,7 +43,7 @@ $gray: #64748b;
   .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
 
     .hero-shapes {
       position: absolute;
@@ -726,7 +727,7 @@ $gray: #64748b;
 // ===================== TESTIMONIAL SECTION =====================
 .testimonial-section {
   padding: 120px 0;
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
   position: relative;
   overflow: hidden;
 

@@ -45,10 +45,6 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
           </div>
         </div>
       </div>
-      <div class="hero-scroll">
-        <span>Scroll Down</span>
-        <div class="scroll-line"></div>
-      </div>
     </section>
 
     <!-- OUR STORY SECTION -->

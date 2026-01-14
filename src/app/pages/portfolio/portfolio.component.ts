@@ -42,10 +42,6 @@ import { RouterLink } from '@angular/router';
           </div>
         </div>
       </div>
-      <div class="scroll-indicator">
-        <span>Scroll to explore</span>
-        <div class="scroll-line"></div>
-      </div>
     </section>
 
     <!-- FILTER SECTION -->

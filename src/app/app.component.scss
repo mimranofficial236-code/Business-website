@@ -1,5 +1,6 @@
 // Variables
 $primary: #0d3b66;
+$primary-dark: #092a4a;
 $accent: #f4d35e;
 $light: #f8fafc;
 $gray: #64748b;
@@ -42,7 +43,7 @@ main {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
   border: none;
   cursor: pointer;
   display: flex;
@@ -104,7 +105,7 @@ main {
 }
 
 .chat-header {
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
   padding: 18px;
   display: flex;
   align-items: center;
@@ -245,7 +246,7 @@ main {
   }
 
   &.user .message-bubble {
-    background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
     color: white;
     border-bottom-right-radius: 4px;
   }
@@ -303,7 +304,7 @@ main {
   .send-btn {
     width: 46px;
     height: 46px;
-    background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
     border: none;
     border-radius: 12px;
     cursor: pointer;

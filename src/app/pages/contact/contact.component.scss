@@ -1,5 +1,6 @@
-// Variables
+﻿// Variables
 $primary: #0D3B66;
+$primary-dark: #092a4a;
 $accent: #F4D35E;
 $light: #f8fafc;
 $gray: #64748b;
@@ -62,7 +63,7 @@ $gray: #64748b;
   .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
 
     .hero-shapes {
       .shape {
@@ -172,7 +173,7 @@ $gray: #64748b;
 
 // Left Side - Contact Info
 .contact-info-side {
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
   padding: 60px;
   position: relative;
   overflow: hidden;
@@ -521,7 +522,7 @@ $gray: #64748b;
     }
 
     &.selected {
-      background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+      background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
       border-color: $primary;
       box-shadow: 0 8px 20px rgba($primary, 0.3);
 
@@ -586,7 +587,7 @@ $gray: #64748b;
     justify-content: center;
     gap: 14px;
     padding: 24px 44px;
-    background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
     color: white;
     font-size: 19px;
     font-weight: 700;
@@ -1059,7 +1060,7 @@ $gray: #64748b;
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
   border: none;
   cursor: pointer;
   display: flex;
@@ -1126,7 +1127,7 @@ $gray: #64748b;
 }
 
 .chat-header {
-  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
   padding: 20px;
   display: flex;
   align-items: center;
@@ -1297,7 +1298,7 @@ $gray: #64748b;
   }
 
   &.user .message-bubble {
-    background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
     color: white;
     border-bottom-right-radius: 6px;
   }
@@ -1359,7 +1360,7 @@ $gray: #64748b;
   .send-btn {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+    background: linear-gradient(135deg, $primary 0%, $primary-dark 100%);
     border: none;
     border-radius: 14px;
     cursor: pointer;

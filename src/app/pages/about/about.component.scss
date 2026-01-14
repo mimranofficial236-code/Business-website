@@ -1,5 +1,6 @@
 // Variables
 $primary: #0D3B66;
+$primary-dark: #092a4a;
 $accent: #F4D35E;
 $light: #f8fafc;
 $gray: #64748b;
@@ -379,7 +380,7 @@ $gray: #64748b;
       transition: all 0.3s ease;
 
       &:hover {
-        background: darken($primary, 8%);
+        background: $primary-dark;
         transform: translateY(-3px);
         box-shadow: 0 15px 30px rgba($primary, 0.3);
 
@@ -410,7 +411,7 @@ $gray: #64748b;
     .ceo-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba($primary, 0.97) 0%, rgba(darken($primary, 10%), 0.95) 100%);
+      background: linear-gradient(135deg, rgba($primary, 0.97) 0%, rgba($primary-dark, 0.95) 100%);
     }
 
     .ceo-pattern {
