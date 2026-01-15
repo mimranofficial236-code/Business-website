@@ -187,7 +187,7 @@ $border-color: rgba(255, 255, 255, 0.08);
       width: 180px;
       height: 130px;
       bottom: 40px;
-      right: -15px;
+      right: 0;
       transform: rotate(5deg);
       animation: float 5s ease-in-out infinite;
       z-index: 3;
@@ -197,7 +197,7 @@ $border-color: rgba(255, 255, 255, 0.08);
       width: 170px;
       height: 120px;
       top: 50px;
-      left: -25px;
+      left: 0;
       transform: rotate(-5deg);
       animation: float 5s ease-in-out infinite 1s;
       z-index: 3;
@@ -596,7 +596,7 @@ $border-color: rgba(255, 255, 255, 0.08);
   .why-stat-badge {
     position: absolute;
     top: -25px;
-    right: -25px;
+    right: 0;
     padding: 22px 32px;
     background: linear-gradient(135deg, $accent 0%, $secondary 100%);
     border-radius: 20px;
@@ -1108,11 +1108,11 @@ $border-color: rgba(255, 255, 255, 0.08);
       }
     }
     .why-images {
-      .why-img-small { width: 180px; bottom: -25px; left: -30px; }
+      .why-img-small { width: 180px; bottom: -25px; left: 0; }
       .why-stat-badge { 
         padding: 16px 24px; 
         top: -15px; 
-        right: -15px;
+        right: 0;
         .badge-num { font-size: 28px; }
         .badge-text { font-size: 11px; }
       }
@@ -1194,7 +1194,7 @@ $border-color: rgba(255, 255, 255, 0.08);
   
   .why-us .why-images {
     .why-img-small { display: none; }
-    .why-stat-badge { top: -10px; right: -10px; padding: 14px 20px; }
+    .why-stat-badge { top: -10px; right: 0; padding: 14px 20px; }
   }
   
   .testi-card {
