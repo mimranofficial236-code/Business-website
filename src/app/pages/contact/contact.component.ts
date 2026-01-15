@@ -1,12 +1,11 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewChecked } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [CommonModule, FormsModule],
   template: `
     <!-- HERO SECTION -->
     <section class="contact-hero">
@@ -274,7 +273,7 @@ import { RouterLink } from '@angular/router';
         <div class="container">
           <div class="map-card">
             <div class="map-icon">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <h3>Our Offices</h3>
             <div class="office-locations">
@@ -391,7 +390,7 @@ import { RouterLink } from '@angular/router';
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
           <div class="modal-icon">
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           </div>
           <h2>Message Sent!</h2>
           <p>Thank you for reaching out. We've received your message and will get back to you within 24 hours.</p>

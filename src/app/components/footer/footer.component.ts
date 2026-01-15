@@ -13,9 +13,9 @@ import { CommonModule } from '@angular/common';
           <div class="footer-brand">
             <a routerLink="/" class="logo">
               <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
-                <circle cx="20" cy="20" r="17" stroke="#F4D35E" stroke-width="2.5"/>
-                <path d="M20 12V28M20 12L14 18M20 12L26 18" stroke="#F4D35E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="20" cy="28" r="2" fill="#F4D35E"/>
+                <circle cx="20" cy="20" r="17" stroke="#00d4ff" stroke-width="2.5"/>
+                <path d="M20 12V28M20 12L14 18M20 12L26 18" stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="28" r="2" fill="#7c3aed"/>
               </svg>
               <span class="logo-text">Bright<span class="highlight">Biz</span></span>
             </a>

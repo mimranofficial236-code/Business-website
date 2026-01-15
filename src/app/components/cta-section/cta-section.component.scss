@@ -1,5 +1,13 @@
+$primary: #1a1a2e;
+$primary-dark: #0f0f1a;
+$accent: #00d4ff;
+$secondary: #7c3aed;
+$bg-card: #1a1a28;
+$text-white: #ffffff;
+$text-muted: #a1a1aa;
+
 .cta-section {
-  padding: 80px 0;
+  padding: 100px 0;
   position: relative;
   overflow: hidden;
 
@@ -11,12 +19,13 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: brightness(0.15);
     }
 
     .cta-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(#0D3B66, 0.95) 0%, rgba(#0D3B66, 0.88) 100%);
+      background: linear-gradient(135deg, rgba($primary-dark, 0.97) 0%, rgba($secondary, 0.4) 50%, rgba($accent, 0.2) 100%);
     }
   }
 
@@ -27,103 +36,135 @@
 
   .cta-content {
     text-align: center;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 
     .cta-icon {
-      width: 56px;
-      height: 56px;
-      margin-bottom: 20px;
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 28px;
+      padding: 16px;
+      background: linear-gradient(135deg, rgba($accent, 0.2) 0%, rgba($secondary, 0.15) 100%);
+      border: 1px solid rgba($accent, 0.3);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: float 4s ease-in-out infinite;
+
+      svg {
+        stroke: $accent;
+      }
     }
 
     h2 {
-      font-size: clamp(28px, 4vw, 40px);
-      color: white;
-      margin-bottom: 16px;
+      font-size: clamp(32px, 5vw, 48px);
+      color: $text-white;
+      margin-bottom: 18px;
     }
 
     > p {
-      font-size: 17px;
-      color: rgba(white, 0.85);
-      margin-bottom: 32px;
+      font-size: 18px;
+      color: $text-muted;
+      margin-bottom: 36px;
+      line-height: 1.7;
     }
 
     .cta-buttons {
       display: flex;
       justify-content: center;
-      gap: 16px;
-      margin-bottom: 28px;
+      gap: 18px;
+      margin-bottom: 32px;
     }
 
     .btn-primary {
-      display: inline-block;
-      padding: 16px 28px;
-      background: #F4D35E;
-      color: #0D3B66;
-      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 32px;
+      background: linear-gradient(135deg, $accent 0%, $secondary 100%);
+      color: white;
+      font-weight: 600;
       font-size: 15px;
-      border-radius: 12px;
+      border-radius: 14px;
       text-decoration: none;
       transition: all 0.3s ease;
+      box-shadow: 0 10px 40px rgba($accent, 0.3);
 
       &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 15px 30px rgba(#F4D35E, 0.4);
+        transform: translateY(-4px);
+        box-shadow: 0 20px 50px rgba($accent, 0.4);
       }
     }
 
     .btn-outline {
-      display: inline-block;
-      padding: 16px 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 32px;
       background: transparent;
-      color: white;
+      color: $text-white;
       font-weight: 600;
       font-size: 15px;
-      border: 2px solid rgba(white, 0.3);
-      border-radius: 12px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 14px;
       text-decoration: none;
       transition: all 0.3s ease;
 
       &:hover {
-        background: rgba(white, 0.1);
-        border-color: rgba(white, 0.5);
+        background: rgba(255, 255, 255, 0.1);
+        border-color: $accent;
+        color: $accent;
       }
     }
 
     .cta-features {
       display: flex;
       justify-content: center;
-      gap: 24px;
+      gap: 20px;
+      flex-wrap: wrap;
 
       span {
         font-size: 14px;
         font-weight: 600;
-        color: rgba(white, 0.9);
-        padding: 10px 20px;
-        background: rgba(white, 0.1);
+        color: $text-muted;
+        padding: 12px 22px;
+        background: rgba($bg-card, 0.6);
         border-radius: 50px;
-        border: 1px solid rgba(white, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         transition: all 0.3s ease;
 
         &:hover {
-          background: rgba(white, 0.15);
-          transform: translateY(-2px);
+          background: rgba($accent, 0.1);
+          border-color: rgba($accent, 0.3);
+          color: $accent;
+          transform: translateY(-3px);
         }
       }
     }
   }
 }
 
-@media (max-width: 640px) {
-  .cta-section .cta-content {
-    .cta-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
 
-    .cta-features {
-      flex-direction: column;
-      gap: 10px;
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 80px 0;
+
+    .cta-content {
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-features {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+      }
     }
   }
 }

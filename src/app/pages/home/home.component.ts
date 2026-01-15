@@ -21,7 +21,7 @@ import { RouterLink } from '@angular/router';
             <div class="hero-badge">
               <span class="badge-dot"></span>
               <span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
                 Available for New Projects
               </span>
             </div>
@@ -61,7 +61,7 @@ import { RouterLink } from '@angular/router';
             </div>
             <div class="visual-badge vb2">
               <div class="badge-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
               </div>
               <div>
                 <strong>Fast Delivery</strong>
@@ -149,7 +149,7 @@ import { RouterLink } from '@angular/router';
             <div class="why-features">
               <div class="feature-item">
                 <div class="feature-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
                 </div>
                 <div class="feature-text">
                   <h4>Fast Delivery</h4>
@@ -158,7 +158,7 @@ import { RouterLink } from '@angular/router';
               </div>
               <div class="feature-item">
                 <div class="feature-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
                 <div class="feature-text">
                   <h4>Affordable Pricing</h4>
@@ -167,7 +167,7 @@ import { RouterLink } from '@angular/router';
               </div>
               <div class="feature-item">
                 <div class="feature-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 </div>
                 <div class="feature-text">
                   <h4>100% Guarantee</h4>
@@ -176,7 +176,7 @@ import { RouterLink } from '@angular/router';
               </div>
               <div class="feature-item">
                 <div class="feature-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
                 </div>
                 <div class="feature-text">
                   <h4>24/7 Support</h4>
@@ -269,7 +269,7 @@ import { RouterLink } from '@angular/router';
       </div>
       <div class="container">
         <div class="cta-content">
-          <svg class="cta-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="cta-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
             <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
             <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>

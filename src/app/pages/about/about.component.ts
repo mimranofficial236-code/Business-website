@@ -116,7 +116,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
             </div>
             <div class="floating-elements">
               <div class="float-badge badge-1">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="#F4D35E"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#00d4ff"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                 <span>Top Rated CEO</span>
               </div>
               <div class="float-badge badge-2">
@@ -130,21 +130,21 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
               <div class="name-title">
                 <h3>Muhammad <span>Imran</span></h3>
                 <div class="title-badge">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                   <span>Founder & Chief Executive Officer</span>
                 </div>
               </div>
             </div>
             <div class="quote-section">
               <div class="quote-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="#F4D35E"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#00d4ff"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
               </div>
               <p>"I started BrightBiz Digital with a simple belief: every business, no matter how small, deserves a powerful online presence. Today, seeing our clients succeed is what drives me every single day."</p>
             </div>
             <div class="achievement-grid">
               <div class="achievement">
                 <div class="ach-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 </div>
                 <div class="ach-info">
                   <strong>500+</strong>
@@ -153,7 +153,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
               </div>
               <div class="achievement">
                 <div class="ach-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <div class="ach-info">
                   <strong>50+</strong>
@@ -162,7 +162,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
               </div>
               <div class="achievement">
                 <div class="ach-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
                 </div>
                 <div class="ach-info">
                   <strong>15+</strong>
@@ -229,21 +229,21 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
         <div class="mission-grid">
           <div class="mission-card">
             <div class="card-icon">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="#F4D35E"/></svg>
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2" fill="#00d4ff"/></svg>
             </div>
             <h3>Our Mission</h3>
             <p>To empower local businesses with professional, affordable digital solutions that drive real growth.</p>
           </div>
           <div class="mission-card featured">
             <div class="card-icon">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3" fill="#F4D35E"/></svg>
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3" fill="#00d4ff"/></svg>
             </div>
             <h3>Our Vision</h3>
             <p>To become the most trusted digital partner for small businesses worldwide.</p>
           </div>
           <div class="mission-card">
             <div class="card-icon">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="#F4D35E" stroke="#F4D35E" stroke-width="1"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="#00d4ff" stroke="#00d4ff" stroke-width="1"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
             </div>
             <h3>Our Promise</h3>
             <p>We promise to treat your business like our own, delivering solutions that exceed expectations.</p>
@@ -497,7 +497,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
       <div class="container">
         <div class="cta-content">
           <div class="cta-icon">
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
           </div>
           <h2>Ready to Start Your <span>Digital Journey</span>?</h2>
           <p>Let's discuss how we can help your business grow online</p>
@@ -626,22 +626,22 @@ export class AboutComponent implements AfterViewInit, OnDestroy {
 
   getValueIcon(icon: string): SafeHtml {
     const icons: {[key: string]: string} = {
-      'quality': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
-      'handshake': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M20.42 4.58a5.4 5.4 0 00-7.65 0l-.77.78-.77-.78a5.4 5.4 0 00-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg>',
-      'innovation': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>',
-      'transparency': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>',
-      'speed': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
-      'support': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>'
+      'quality': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
+      'handshake': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M20.42 4.58a5.4 5.4 0 00-7.65 0l-.77.78-.77-.78a5.4 5.4 0 00-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg>',
+      'innovation': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>',
+      'transparency': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>',
+      'speed': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+      'support': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>'
     };
     return this.sanitizer.bypassSecurityTrustHtml(icons[icon] || '');
   }
 
   getWhyIcon(icon: string): SafeHtml {
     const icons: {[key: string]: string} = {
-      'money': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>',
-      'rocket': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>',
-      'medal': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>',
-      'headset': '<svg viewBox="0 0 24 24" fill="none" stroke="#F4D35E" stroke-width="2"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>'
+      'money': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>',
+      'rocket': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>',
+      'medal': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>',
+      'headset': '<svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>'
     };
     return this.sanitizer.bypassSecurityTrustHtml(icons[icon] || '');
   }

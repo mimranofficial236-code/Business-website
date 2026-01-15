@@ -1,22 +1,29 @@
+$primary: #1a1a2e;
+$primary-dark: #0f0f1a;
+$accent: #00d4ff;
+$secondary: #7c3aed;
+$bg-card: #1a1a28;
+$text-white: #ffffff;
+$text-muted: #a1a1aa;
+$border-color: rgba(255, 255, 255, 0.08);
+
 .footer {
-  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 100%);
-  color: white;
-  padding: 110px 0 0;
+  background: linear-gradient(180deg, $primary 0%, $primary-dark 100%);
+  color: $text-white;
+  padding: 100px 0 0;
   position: relative;
   overflow: hidden;
 
-  // Top accent line
   &::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-light), var(--accent), var(--primary-light));
+    height: 3px;
+    background: linear-gradient(90deg, $accent, $secondary, $accent);
   }
 
-  // Decorative circle
   &::after {
     content: '';
     position: absolute;
@@ -24,7 +31,7 @@
     right: -200px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(244, 211, 94, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba($accent, 0.08) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
   }
@@ -33,9 +40,9 @@
 .footer-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
-  gap: 70px;
-  padding-bottom: 80px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 60px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid $border-color;
   position: relative;
   z-index: 1;
 }
@@ -45,7 +52,7 @@
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     transition: transform 0.3s ease;
 
     &:hover {
@@ -60,16 +67,18 @@
       width: 48px;
       height: 48px;
       transition: transform 0.3s ease;
+
+      circle, path { stroke: $accent; }
     }
 
     &-text {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 26px;
-      font-weight: 800;
-      color: white;
+      font-weight: 700;
+      color: $text-white;
 
       .highlight {
-        background: linear-gradient(135deg, var(--accent) 0%, #f5c842 100%);
+        background: linear-gradient(135deg, $accent 0%, $secondary 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -77,27 +86,27 @@
   }
 
   p {
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 32px;
-    line-height: 1.9;
+    color: $text-muted;
+    margin-bottom: 28px;
+    line-height: 1.8;
     font-size: 15px;
   }
 }
 
 .social-links {
   display: flex;
-  gap: 14px;
+  gap: 12px;
 
   a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 16px;
-    color: white;
+    width: 48px;
+    height: 48px;
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: 14px;
+    color: $text-muted;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -106,7 +115,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, var(--accent) 0%, #f5c842 100%);
+      background: linear-gradient(135deg, $accent 0%, $secondary 100%);
       opacity: 0;
       transition: opacity 0.3s ease;
     }
@@ -118,32 +127,32 @@
     }
 
     &:hover {
-      border-color: var(--accent);
-      transform: translateY(-8px) rotate(5deg);
-      box-shadow: 0 15px 35px rgba(244, 211, 94, 0.3);
+      border-color: $accent;
+      transform: translateY(-6px) rotate(5deg);
+      box-shadow: 0 15px 35px rgba($accent, 0.25);
 
       &::before {
         opacity: 1;
       }
 
       svg {
-        color: var(--primary);
+        color: white;
         transform: scale(1.1);
       }
     }
 
     svg {
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
     }
   }
 }
 
 .footer-links {
   h4 {
-    font-size: 19px;
-    margin-bottom: 32px;
-    color: white;
+    font-size: 18px;
+    margin-bottom: 28px;
+    color: $text-white;
     position: relative;
     padding-bottom: 14px;
 
@@ -152,9 +161,9 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 45px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--accent), transparent);
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, $accent, transparent);
       border-radius: 2px;
     }
   }
@@ -163,15 +172,15 @@
     list-style: none;
 
     li {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
 
       a {
-        color: rgba(255, 255, 255, 0.7);
+        color: $text-muted;
         font-size: 15px;
         transition: all 0.3s ease;
         display: inline-flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         padding: 4px 0;
         position: relative;
 
@@ -179,17 +188,17 @@
           content: '';
           width: 0;
           height: 2px;
-          background: linear-gradient(90deg, var(--accent), transparent);
+          background: linear-gradient(90deg, $accent, transparent);
           transition: width 0.3s ease;
           border-radius: 2px;
         }
 
         &:hover {
-          color: var(--accent);
-          transform: translateX(12px);
+          color: $accent;
+          transform: translateX(10px);
 
           &::before {
-            width: 18px;
+            width: 16px;
           }
         }
       }
@@ -199,9 +208,9 @@
 
 .footer-contact {
   h4 {
-    font-size: 19px;
-    margin-bottom: 32px;
-    color: white;
+    font-size: 18px;
+    margin-bottom: 28px;
+    color: $text-white;
     position: relative;
     padding-bottom: 14px;
 
@@ -210,9 +219,9 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 45px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--accent), transparent);
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, $accent, transparent);
       border-radius: 2px;
     }
   }
@@ -223,15 +232,15 @@
     li {
       display: flex;
       align-items: flex-start;
-      gap: 16px;
-      margin-bottom: 22px;
-      color: rgba(255, 255, 255, 0.7);
+      gap: 14px;
+      margin-bottom: 20px;
+      color: $text-muted;
       font-size: 15px;
       transition: all 0.3s ease;
       padding: 8px 0;
 
       &:hover {
-        transform: translateX(8px);
+        transform: translateX(6px);
 
         svg {
           transform: scale(1.15) rotate(5deg);
@@ -239,21 +248,21 @@
       }
 
       svg {
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
         flex-shrink: 0;
-        color: var(--accent);
+        color: $accent;
         margin-top: 2px;
         transition: all 0.3s ease;
-        filter: drop-shadow(0 2px 8px rgba(244, 211, 94, 0.3));
+        filter: drop-shadow(0 2px 8px rgba($accent, 0.3));
       }
 
       a {
-        color: rgba(255, 255, 255, 0.7);
+        color: $text-muted;
         transition: color 0.3s ease;
 
         &:hover {
-          color: var(--accent);
+          color: $accent;
         }
       }
     }
@@ -264,22 +273,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
+  padding: 28px 0;
   position: relative;
   z-index: 1;
 
   p {
-    color: rgba(255, 255, 255, 0.5);
+    color: $text-muted;
     font-size: 14px;
   }
 }
 
 .footer-legal {
   display: flex;
-  gap: 35px;
+  gap: 32px;
 
   a {
-    color: rgba(255, 255, 255, 0.5);
+    color: $text-muted;
     font-size: 14px;
     transition: all 0.3s ease;
     position: relative;
@@ -292,12 +301,12 @@
       left: 0;
       width: 0;
       height: 1px;
-      background: var(--accent);
+      background: $accent;
       transition: width 0.3s ease;
     }
 
     &:hover {
-      color: var(--accent);
+      color: $accent;
 
       &::after {
         width: 100%;
@@ -313,23 +322,23 @@
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 55px;
+    gap: 50px;
   }
 }
 
 @media (max-width: 600px) {
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 45px;
+    gap: 40px;
   }
 
   .footer-bottom {
     flex-direction: column;
-    gap: 22px;
+    gap: 20px;
     text-align: center;
   }
 
   .footer-legal {
-    gap: 25px;
+    gap: 24px;
   }
 }
