@@ -150,12 +150,12 @@ $border-color: rgba(255, 255, 255, 0.08);
 .hero-visual {
   position: relative;
   height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .visual-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     width: 80%;
     max-width: 420px;
     border-radius: 24px;
@@ -164,7 +164,7 @@ $border-color: rgba(255, 255, 255, 0.08);
     z-index: 2;
     border: 1px solid rgba(255, 255, 255, 0.1);
 
-    img { width: 100%; display: block; }
+    img { width: 100%; height: auto; display: block; }
 
     .visual-glow {
       position: absolute;
