@@ -156,8 +156,8 @@ $border-color: rgba(255, 255, 255, 0.08);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 400px;
+    width: 80%;
+    max-width: 420px;
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
@@ -186,8 +186,8 @@ $border-color: rgba(255, 255, 255, 0.08);
     &.vf1 {
       width: 180px;
       height: 130px;
-      bottom: 20%;
-      right: 0;
+      bottom: 50px;
+      right: 20px;
       transform: rotate(5deg);
       animation: float 5s ease-in-out infinite;
       z-index: 3;
@@ -196,8 +196,8 @@ $border-color: rgba(255, 255, 255, 0.08);
     &.vf2 {
       width: 170px;
       height: 120px;
-      top: 10%;
-      left: 0;
+      top: 60px;
+      left: 20px;
       transform: rotate(-5deg);
       animation: float 5s ease-in-out infinite 1s;
       z-index: 3;
@@ -995,28 +995,28 @@ $border-color: rgba(255, 255, 255, 0.08);
       .hero-buttons { justify-content: center; }
     }
     .hero-visual {
-      max-width: 100%;
+      max-width: 450px;
       margin: 0 auto;
-      height: 450px;
+      height: 400px;
       
       .visual-main {
-        width: 55%;
-        max-width: 300px;
+        width: 65%;
+        max-width: 280px;
       }
       
       .visual-float {
-        &.vf1 { width: 130px; height: 95px; bottom: 15%; right: 5%; }
-        &.vf2 { width: 120px; height: 85px; top: 8%; left: 5%; }
+        &.vf1 { width: 120px; height: 85px; bottom: 30px; right: 10px; }
+        &.vf2 { width: 110px; height: 80px; top: 40px; left: 10px; }
       }
       
       .visual-badge {
         padding: 10px 14px;
-        gap: 10px;
-        .badge-icon { width: 36px; height: 36px; }
-        strong { font-size: 12px; }
-        span { font-size: 10px; }
-        &.vb1 { top: 5%; right: 5%; }
-        &.vb2 { bottom: 10%; left: 5%; }
+        gap: 8px;
+        .badge-icon { width: 34px; height: 34px; }
+        strong { font-size: 11px; }
+        span { font-size: 9px; }
+        &.vb1 { top: 30px; right: 5px; }
+        &.vb2 { bottom: 20px; left: 5px; }
       }
     }
     .hero-stats .stats-row {
@@ -1087,16 +1087,19 @@ $border-color: rgba(255, 255, 255, 0.08);
       }
     }
     .hero-visual {
-      height: 380px;
+      max-width: 100%;
+      height: 350px;
       
       .visual-main {
-        width: 50%;
+        width: 60%;
         max-width: 220px;
       }
       
       .visual-float {
-        &.vf1 { width: 100px; height: 70px; bottom: 12%; right: 3%; border-width: 2px; }
-        &.vf2 { width: 90px; height: 65px; top: 5%; left: 3%; border-width: 2px; }
+        border-width: 2px;
+        border-radius: 12px;
+        &.vf1 { width: 90px; height: 65px; bottom: 25px; right: 15px; }
+        &.vf2 { width: 85px; height: 60px; top: 35px; left: 15px; }
       }
       
       .visual-badge {
@@ -1106,8 +1109,8 @@ $border-color: rgba(255, 255, 255, 0.08);
         .badge-icon { width: 28px; height: 28px; border-radius: 8px; }
         strong { font-size: 10px; }
         span { font-size: 8px; }
-        &.vb1 { top: 3%; right: 3%; }
-        &.vb2 { bottom: 8%; left: 3%; }
+        &.vb1 { top: 25px; right: 10px; }
+        &.vb2 { bottom: 15px; left: 10px; }
       }
     }
     .hero-stats {
@@ -1214,16 +1217,18 @@ $border-color: rgba(255, 255, 255, 0.08);
       > p { font-size: 14px; line-height: 1.7; }
     }
     .hero-visual { 
-      height: 320px;
+      height: 300px;
       
       .visual-main {
-        width: 45%;
+        width: 55%;
         max-width: 180px;
       }
       
       .visual-float {
-        &.vf1 { width: 80px; height: 55px; bottom: 10%; right: 2%; border-width: 2px; border-radius: 12px; }
-        &.vf2 { width: 70px; height: 50px; top: 5%; left: 2%; border-width: 2px; border-radius: 12px; }
+        border-width: 2px;
+        border-radius: 10px;
+        &.vf1 { width: 75px; height: 55px; bottom: 20px; right: 10px; }
+        &.vf2 { width: 70px; height: 50px; top: 30px; left: 10px; }
       }
       
       .visual-badge {
@@ -1233,8 +1238,8 @@ $border-color: rgba(255, 255, 255, 0.08);
         .badge-icon { width: 24px; height: 24px; border-radius: 6px; svg { width: 12px; height: 12px; } }
         strong { font-size: 9px; }
         span { font-size: 7px; }
-        &.vb1 { top: 2%; right: 2%; }
-        &.vb2 { bottom: 5%; left: 2%; }
+        &.vb1 { top: 20px; right: 5px; }
+        &.vb2 { bottom: 10px; left: 5px; }
       }
     }
     .hero-stats {
